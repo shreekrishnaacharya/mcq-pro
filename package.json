@@ -1,0 +1,35 @@
+{
+  "name": "Ventvoila",
+  "version": "1.0.0",
+  "description": "Dami is a nodejs framework above expressjs. It consist of library and tools that will let you quickly setup your web application writing less code for you so you can focus on your business logic.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "author": "Shree Krishna Acharya",
+  "license": "ISC",
+  "dependencies": {
+    "@damijs/core": "2.3.7",
+    "const": "^1.0.0",
+    "ejs": "^3.1.8",
+    "dotenv": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun.js": "^8.0.1",
+    "newrelic": "^9.7.0",
+    "nodemailer": "^6.7.8",
+    "nodemailer-mailgun-transport": "^2.1.5",
+    "pdf-creator-node": "^2.3.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/ejs": "^3.1.1",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/nodemailer": "^6.4.6",
+    "nodemon": "^2.0.4",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
