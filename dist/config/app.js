@@ -7,7 +7,7 @@ dotenv.config();
 const appConfig = {
     appName: "MCQ",
     port: 8080,
-    production: false,
+    production: true,
     // debug: {
     //   queryLog: false,
     //   timeLog: false,
@@ -18,7 +18,7 @@ const appConfig = {
     },
     viewEngine: 'ejs',
     controllers: controllers,
-    publicDir: { path: './public/static', from: "/static" },
+    publicDir: { path: './public', from: "/res/" },
     // services: [services],
     // baseUrl: 'http://ventvoila.com',
     // baseUrl: 'http://referendum.ktm.yetiappcloud.com/',
@@ -53,16 +53,16 @@ const appConfig = {
         // password: "lulhw1Vxa5RoicwUdw0j",
         // database: "b70zcwsbq3ylzmoguajc"
         //************************************/
-        host: 'localhost',
-        user: 'root2',
-        password: 'kamal12345',
-        database: 'voteup',
+        // host: 'localhost',
+        // user: 'root2',
+        // password: 'kamal12345',
+        // database: 'voteup',
         port: 3306,
         //***************yeti cloud*********************/
-        // host: "node8452-referendum.ktm.yetiappcloud.com",
-        // user: "root",
-        // password: "SbwqYb3ufm",
-        // database: "voteup"
+        host: "node8452-referendum.ktm.yetiappcloud.com",
+        user: "root",
+        password: "SbwqYb3ufm",
+        database: "mcq"
         //************************************/
         // host: "sql.freedb.tech",
         // user: "freedb_root2",
