@@ -19,7 +19,7 @@ const appConfig: IDamiConfig = {
   },
   viewEngine: 'ejs',
   controllers: controllers,
-  publicDir: { path: './public', from: "/res/" },
+  publicDir: { path: './public/static', from: "/static" },
   // services: [services],
   // baseUrl: 'http://ventvoila.com',
   baseUrl: 'http://stdmcq.ktm.yetiappcloud.com//',
