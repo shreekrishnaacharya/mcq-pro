@@ -22,8 +22,8 @@ const appConfig: IDamiConfig = {
   publicDir: { path: './public', from: "/res/" },
   // services: [services],
   // baseUrl: 'http://ventvoila.com',
-  // baseUrl: 'http://referendum.ktm.yetiappcloud.com/',
-  baseUrl: 'http://localhost:8080',
+  baseUrl: 'http://stdmcq.ktm.yetiappcloud.com//',
+  // baseUrl: 'http://localhost:8080',
   basePath: 'api',
   resourcePath: 'storage',
   serverRender:

@@ -1,11 +1,11 @@
 {
-  "name": "Ventvoila",
+  "name": "MCQ",
   "version": "1.0.0",
   "description": "Dami is a nodejs framework above expressjs. It consist of library and tools that will let you quickly setup your web application writing less code for you so you can focus on your business logic.",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "start": "node --es-module-specifier-resolution=node dist/index.js",
     "build": "rm -rf ./dist && tsc"
   },
   "author": "Shree Krishna Acharya",
