@@ -1,10 +1,4 @@
 node_modules/
-post/
-client/
-backend/
 .vscode/
-tokyo/
-mantis/
-tmp/
 src/
 tsconfig.json

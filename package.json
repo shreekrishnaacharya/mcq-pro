@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --es-module-specifier-resolution=node dist/index.js",
+    "start": "node --es-module-specifier-resolution=node dist/index.js > logs/nodejs.log",
     "build": "rm -rf ./dist && tsc"
   },
   "author": "Shree Krishna Acharya",

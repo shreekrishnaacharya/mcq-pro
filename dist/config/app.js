@@ -53,16 +53,16 @@ const appConfig = {
         // password: "lulhw1Vxa5RoicwUdw0j",
         // database: "b70zcwsbq3ylzmoguajc"
         //************************************/
-        host: 'localhost',
-        user: 'root2',
-        password: 'kamal12345',
-        database: 'voteup',
+        // host: 'localhost',
+        // user: 'root2',
+        // password: 'kamal12345',
+        // database: 'voteup',
         port: 3306,
         //***************yeti cloud*********************/
-        // host: "node8452-referendum.ktm.yetiappcloud.com",
-        // user: "root",
-        // password: "SbwqYb3ufm",
-        // database: "mcq"
+        host: "node8452-referendum.ktm.yetiappcloud.com",
+        user: "root",
+        password: "SbwqYb3ufm",
+        database: "mcq"
         //************************************/
         // host: "sql.freedb.tech",
         // user: "freedb_root2",
