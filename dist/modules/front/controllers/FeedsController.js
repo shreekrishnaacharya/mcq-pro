@@ -16,6 +16,7 @@ class FeedsController extends Controller {
             try {
                 if (model.load(dataList)) {
                     if (await model.save()) {
+                        console.log(model)
                         res.sendStatus(HttpCode.ACCEPTED);
                         return next();
                     }

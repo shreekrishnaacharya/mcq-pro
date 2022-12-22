@@ -21,7 +21,7 @@ const appConfig = {
     publicDir: { path: './public/static', from: "/static" },
     // services: [services],
     // baseUrl: 'http://ventvoila.com',
-    baseUrl: 'http://stdmcq.ktm.yetiappcloud.com//',
+    baseUrl: 'http://mcq.hopto.org/',
     // baseUrl: 'http://localhost:8080',
     basePath: 'api',
     resourcePath: 'storage',
