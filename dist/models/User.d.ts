@@ -14,7 +14,7 @@ declare class User extends ActiveRecords implements IAuth {
         LICENSES: number;
         CITIZENSHIP: number;
         PAN_CARD: number;
-        VOTER_CARD: number;
+        STUDENTS_CARD: number;
         OTHER: number;
     };
     old_password: string;
@@ -60,7 +60,6 @@ declare class User extends ActiveRecords implements IAuth {
         img: (string | {
             max: number;
         })[];
-        dob: string[];
         gender: (string | {
             oneof: string[];
         })[];
@@ -107,7 +106,7 @@ declare class User extends ActiveRecords implements IAuth {
     };
     visibility: () => {
         PASS: string[];
-        VOTERS: string[];
+        STUDENTSS: string[];
     };
     beforeSave(type: string): Promise<boolean>;
     getLoginData(): any;

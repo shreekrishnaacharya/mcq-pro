@@ -5,7 +5,6 @@ declare class DashboardController extends Controller<Ans> {
     constructor();
     requiredLogin: () => boolean;
     index: (req: Request, res: Response, next: NextFunction) => Promise<void>;
-    popular: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     route: () => {
         method: Methods;
         path: string;

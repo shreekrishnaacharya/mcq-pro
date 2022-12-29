@@ -3,10 +3,10 @@ declare class Setting extends ActiveRecords {
     constructor();
     rules: () => {
         id: string[];
-        review_limit: string[];
-        vote_limit: string[];
-        approve_on: string[];
-        comment_limit: string[];
+        code: (string | {
+            max: number;
+        })[];
+        accept: string[];
     };
 }
 export default Setting;

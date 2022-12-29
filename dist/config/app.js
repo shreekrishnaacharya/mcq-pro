@@ -4,10 +4,11 @@ import controllers from '../controllers';
 import dotenv from 'dotenv';
 import ServerRender from "../helpers/ServerRender";
 dotenv.config();
+// console.log(controllers)
 const appConfig = {
     appName: "MCQ",
     port: 8080,
-    production: true,
+    production: false,
     // debug: {
     //   queryLog: false,
     //   timeLog: false,
@@ -18,14 +19,18 @@ const appConfig = {
     },
     viewEngine: 'ejs',
     controllers: controllers,
-    publicDir: { path: './public/static', from: "/static" },
+    publicDir: { path: './public/static/', from: "/static/" },
     // services: [services],
     // baseUrl: 'http://ventvoila.com',
-    baseUrl: 'http://mcq.hopto.org/',
-    // baseUrl: 'http://localhost:8080',
+    // baseUrl: 'http://referendum.ktm.yetiappcloud.com/',
+    baseUrl: 'http://localhost:8080',
     basePath: 'api',
     resourcePath: 'storage',
     serverRender: [
+        {
+            path: "/admin",
+            page: "public/admin.html"
+        },
         {
             path: "/",
             page: "public/index.html"
@@ -53,16 +58,16 @@ const appConfig = {
         // password: "lulhw1Vxa5RoicwUdw0j",
         // database: "b70zcwsbq3ylzmoguajc"
         //************************************/
-        // host: 'localhost',
-        // user: 'root2',
-        // password: 'kamal12345',
-        // database: 'voteup',
+        host: 'localhost',
+        user: 'root2',
+        password: 'kamal12345',
+        database: 'mcq',
         port: 3306,
         //***************yeti cloud*********************/
-        host: "node8452-referendum.ktm.yetiappcloud.com",
-        user: "root",
-        password: "SbwqYb3ufm",
-        database: "mcq"
+        // host: "node8452-referendum.ktm.yetiappcloud.com",
+        // user: "root",
+        // password: "SbwqYb3ufm",
+        // database: "voteup"
         //************************************/
         // host: "sql.freedb.tech",
         // user: "freedb_root2",

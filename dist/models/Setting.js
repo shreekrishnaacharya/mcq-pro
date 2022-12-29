@@ -5,10 +5,8 @@ class Setting extends ActiveRecords {
         this.rules = () => {
             return {
                 id: ['number'],
-                review_limit: ['number'],
-                vote_limit: ['number'],
-                approve_on: ['required', 'number'],
-                comment_limit: ['number'],
+                code: ['string', { max: 5 }],
+                accept: ['number'],
             };
         };
         this.init();

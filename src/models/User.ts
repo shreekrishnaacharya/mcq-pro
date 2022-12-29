@@ -17,7 +17,7 @@ class User extends ActiveRecords implements IAuth {
         LICENSES: 0,
         CITIZENSHIP: 1,
         PAN_CARD: 2,
-        VOTER_CARD: 3,
+        STUDENTS_CARD: 3,
         OTHER: 4
     }
     old_password: string = '';
@@ -42,7 +42,6 @@ class User extends ActiveRecords implements IAuth {
             password: ['required', 'string', { max: 200 }],
             old_password: ['string', { max: 200 }],
             img: ['string', { max: 100 }],
-            dob: ['string'],
             gender: ['string', { oneof: ["Male", "Female", "Other"] }],
             address1: ['string', { max: 50 }],
             address2: ['string', { max: 50 }],
@@ -105,7 +104,7 @@ class User extends ActiveRecords implements IAuth {
             PASS: [
                 "old_password", "temp_password"
             ],
-            VOTERS: [
+            STUDENTSS: [
                 "id", "uid"
             ],
         }
