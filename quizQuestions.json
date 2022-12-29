@@ -1,0 +1,700 @@
+[
+    {
+        "id": "1",
+        "qsn": "Do you currently work for earning? ",
+        "qsn2": "के तपाइँ हाल कमाईको लागि काम गर्नुहुन्छ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "2",
+        "qsn": "How easy do you feel to talk to new people?",
+        "qsn2": "नयाँ मान्छेसँग कुरा गर्न कत्तिको सजिलो लाग्छ ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "3",
+        "qsn": "Mention the number of times you have visited a doctor due to illness in the past one year.",
+        "qsn2": "विगत एक वर्षमा बिरामीको कारणले गर्दा तपाईले डाक्टरलाई भेट्नुभएको संख्या उल्लेख गर्नुहोस्।",
+        "options": [
+            "0",
+            "1-2",
+            "3-5",
+            "More than 5"
+        ],
+        "options2": [
+            "०",
+            "१-२",
+            "३-५",
+            "५ भन्दा बढी"
+        ]
+    },
+    {
+        "id": "4",
+        "qsn": "How long does it take for you to reach school from home?",
+        "qsn2": "तपाईंलाई घरबाट विद्यालय पुग्न कति समय लाग्छ?",
+        "options": [
+            "5-10min",
+            "10-15min",
+            "15-20min",
+            "More than 20 min"
+        ],
+        "options2": [
+            "५-१० मिनेट",
+            "१०-१५ मिनेट",
+            "१५-२० मिनेट",
+            "२० मिनेट भन्दा बढी"
+        ]
+    },
+    {
+        "id": "5",
+        "qsn": "Are you happy with your school environment?",
+        "qsn2": "के तपाई आफ्नो विद्यालयको वातावरणसँग सन्तुष्ट हुनुहुन्छ?",
+        "options": [
+            "Very Happy",
+            "Happy",
+            "Satisfied",
+            "Unsatisfied"
+        ],
+        "options2": [
+            "धेरै खुशी",
+            "खुशी",
+            "सन्तुष्ट",
+            "असन्तुष्ट"
+        ]
+    },
+    {
+        "id": "6",
+        "qsn": "How many friends do you have?",
+        "qsn2": "तपाईको कति साथीहरू छन्?",
+        "options": [
+            "0",
+            "1-5",
+            "6-10",
+            "More than 10"
+        ],
+        "options2": [
+            "०",
+            "१-५",
+            "६-१०",
+            "१० भन्दा बढी"
+        ]
+    },
+    {
+        "id": "7",
+        "qsn": "How often do you go for outings in a year? With yourfamily/friends/school or alone, for short or long trip of 1 or more days. e.g. picnic",
+        "qsn2": "तपाईं एक वर्षमा कति पटक घुम्न जानुहुन्छ? आफ्नो परिवार/साथीहरू/विद्यालय वा एक्लै, छोटो वा लामो 1 वा धेरै दिनको यात्राको लागि | जस्तै पिकनिक",
+        "options": [
+            "0",
+            "1-2",
+            "3-5",
+            "More than 5"
+        ],
+        "options2": [
+            "०",
+            "१-२",
+            "३-५",
+            "५ भन्दा बढी"
+        ]
+    },
+    {
+        "id": "8",
+        "qsn": "How many extra activities(i.e sports,social work, school program and other) of school or locallevel have you participated in the last year?",
+        "qsn2": "तपाईंले गत वर्ष विद्यालय वा स्थानीय तहका कतिवटा अतिरिक्त क्रियाकलापहरू (जस्तै खेलकुद, सामाजिक कार्य, विद्यालय कार्यक्रम र अन्य) भाग लिनुभएको छ?",
+        "options": [
+            "0",
+            "1-2",
+            "3-5",
+            "More than 5"
+        ],
+        "options2": [
+            "०",
+            "१-२",
+            "३-५",
+            "५ भन्दा बढी"
+        ]
+    },
+    {
+        "id": "9",
+        "qsn": "How many times do you have guests at home in a month? ",
+        "qsn2": "तपाईंको घरमा एक महिनामा कति पटक पाहुना आउँछन्?",
+        "options": [
+            "0",
+            "1-2",
+            "3-5",
+            "More than 5"
+        ],
+        "options2": [
+            "०",
+            "१-२",
+            "३-५",
+            "५ भन्दा बढी"
+        ]
+    },
+    {
+        "id": "10",
+        "qsn": "Do you like having guests at home?",
+        "qsn2": "के तपाईलाई घरमा पाहुना आउँदा मन पर्छ?",
+        "options": [
+            "I like",
+            "I don't like",
+            "Sometime"
+        ],
+        "options2": [
+            "मन पर्छ",
+            "मन पर्दैन",
+            "कहिलेकाहीं मन पर्छ"
+        ]
+    },
+    {
+        "id": "11",
+        "qsn": "When there is a misunderstanding in your family or between friends, do you think you can handle the situation and solve it?",
+        "qsn2": "तपाईंको परिवारमा वा साथीहरू बीच कुनै गलतफहमी हुँदा, के तपाईंलाई लाग्छ कि तपाईं परिस्थितिलाई सम्हाल्न सक्नुहुन्छ र समाधान गर्न सक्नुहुन्छ?",
+        "options": [
+            "I can",
+            "I can't",
+            "I don't prefer to involve"
+        ],
+        "options2": [
+            "सक्छु",
+            "सक्दिन",
+            "म संलग्न हुन रुचाउँदैन"
+        ]
+    },
+    {
+        "id": "12",
+        "qsn": "At what time do you get up in the morning everyday?",
+        "qsn2": "तपाई हरेक दिन बिहान कति बजे उठ्नुहुन्छ?",
+        "options": [
+            "5-6 am",
+            "6-7 am",
+            "7-8 am",
+            "After 8 am"
+        ],
+        "options2": [
+            "५-६ बजे",
+            "६-७ बजे",
+            "७-८ बजे",
+            "बिहान ८ बजे पछि"
+        ]
+    },
+    {
+        "id": "13",
+        "qsn": "How often do you exercise for your fitness?",
+        "qsn2": "तपाई आफ्नो फिटनेसको लागि कति व्यायाम गर्नुहुन्छ?",
+        "options": [
+            "Regularly",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "नियमित",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "14",
+        "qsn": "What is your internet connection type at home?",
+        "qsn2": "तपाईको घरमा इन्टरनेट जडानको प्रकार के हो?",
+        "options": [
+            "Wifi",
+            "Mobile Data",
+            "Other",
+            "None"
+        ],
+        "options2": [
+            "वाइफाइ",
+            "मोबाइल डाटा",
+            "अरू",
+            "कुनै पनि छैन"
+        ]
+    },
+    {
+        "id": "15",
+        "qsn": "Do you like playing mobile games?",
+        "qsn2": "के तपाई मोबाइल गेम खेल्न मन पराउनुहुन्छ?",
+        "options": [
+            "Very Much",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "धेरै धेरै",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "16",
+        "qsn": "Do you like using Tiktok app?",
+        "qsn2": "तपाईलाई Tiktok एप प्रयोग गर्न मनपर्छ",
+        "options": [
+            "Very Much",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "धेरै धेरै",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "17",
+        "qsn": "Do you like using Facebook app?",
+        "qsn2": "तपाईलाई Facebook एप प्रयोग गर्न मनपर्छ?",
+        "options": [
+            "Very Much",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "धेरै धेरै",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "18",
+        "qsn": "Do you like using Youtube apps?",
+        "qsn2": "तपाईलाई Youtube एप प्रयोग गर्न मनपर्छ?",
+        "options": [
+            "Very Much",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "धेरै धेरै",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "19",
+        "qsn": "Which one do you prefer the most? Choose one.",
+        "qsn2": "तपाईलाई सबैभन्दा बढी कुन मन पर्छ? एउटा छान्नुहोस्।",
+        "options": [
+            "Facebook",
+            "Youtube",
+            "Pubg",
+            "Tiktok"
+        ],
+        "options2": [
+            "Facebook",
+            "Youtube",
+            "Pubg",
+            "Tiktok"
+        ]
+    },
+    {
+        "id": "20",
+        "qsn": "What is the average hour(s) you spend on internet in a day?",
+        "qsn2": "तपाईंले एक दिनमा इन्टरनेटमा बिताउनुभएको औसत घण्टा (हरू) कति हो?",
+        "options": [
+            "0-1 hr",
+            "1-2 hr",
+            "2-3 hr",
+            "3-4 hr"
+        ],
+        "options2": [
+            "०-१ घण्टा",
+            "१-२ घण्टा",
+            "२-३ घण्टा",
+            "३-४ घण्टा"
+        ]
+    },
+    {
+        "id": "21",
+        "qsn": "Who do you think is responsible for your education?",
+        "qsn2": "तपाईको शिक्षाको लागि को जिम्मेवार छ जस्तो लाग्छ?",
+        "options": [
+            "School",
+            "Teacher",
+            "Parents",
+            "Myself"
+        ],
+        "options2": [
+            "विद्यालय",
+            "शिक्षकहरू",
+            "अभिभावक",
+            "मेरो स्वयम्"
+        ]
+    },
+    {
+        "id": "22",
+        "qsn": "Which is your favorite color among these?",
+        "qsn2": "यिनीहरू मध्ये तपाईलाई मन पर्ने रङ कुन हो?",
+        "options": [
+            "Red",
+            "Green",
+            "Black\\/White",
+            "Yellow"
+        ],
+        "options2": [
+            "रातो",
+            "हरियो",
+            "कालो सेतो",
+            "पहेँलो"
+        ]
+    },
+    {
+        "id": "23",
+        "qsn": "What kind of sports do you enjoy the most??",
+        "qsn2": "तपाईलाई कुन प्रकारको खेलकुद धेरै मनपर्छ?",
+        "options": [
+            "Indoor",
+            "Outdoor",
+            "Online",
+            "None"
+        ],
+        "options2": [
+            "घर भित्र",
+            "घर बाहिर",
+            "ओन्लिने",
+            "कुनै पनि छैन"
+        ]
+    },
+    {
+        "id": "24",
+        "qsn": "How often do you play any musical instruments?",
+        "qsn2": "तपाइँ कति पटक कुनै संगीत वाद्ययन्त्र बजाउनुहुन्छ?",
+        "options": [
+            "Regular",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "नियमित",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "25",
+        "qsn": "Do you enjoy spending time alone or in a group?",
+        "qsn2": "तपाईलाई अक्सर कसरी समय बिताउन रमाइलो गर्नुहुन्छ?",
+        "options": [
+            "Alone",
+            "In Group"
+        ],
+        "options2": [
+            "एक्लै",
+            "समूहमा"
+        ]
+    },
+    {
+        "id": "26",
+        "qsn": "Do you prefer team sport or individual sport?",
+        "qsn2": "तपाइँ टोली खेल वा व्यक्तिगत खेल रुचाउनुहुन्छ?",
+        "options": [
+            "Team",
+            "Indivisual"
+        ],
+        "options2": [
+            "समूहमा",
+            "व्यक्तिगत"
+        ]
+    },
+    {
+        "id": "27",
+        "qsn": "Do you meditate?",
+        "qsn2": "के तपाई ध्यान गर्नुहुन्छ?",
+        "options": [
+            "Regular",
+            "Most often",
+            "Sometime",
+            "Never"
+        ],
+        "options2": [
+            "नियमित",
+            "प्राय जसो",
+            "कहिलेकाहीँ",
+            "कहिल्यै होइन"
+        ]
+    },
+    {
+        "id": "28",
+        "qsn": "Do you keep a diary for writing ? ",
+        "qsn2": "के तपाई लेख्नको लागि डायरी राख्नुहुन्छ ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "29",
+        "qsn": "What is the duration ofWhat is the duration of free time that you have allocated for watching TV, using electronic gadgets, playing sports etc. after your school-hour? free time that",
+        "qsn2": "तपाईंले टिभी हेर्न, इलेक्ट्रोनिक ग्याजेटहरू प्रयोग गर्नको लागि छुट्याएको खाली समयको अवधि के हो, तपाइँको विद्यालय समय पछि खेलकुद आदि खेल्ने? खाली समय त्यो",
+        "options": [
+            "0-1 hr",
+            "1-2 hr",
+            "2-3 hr",
+            "3-4 hr"
+        ],
+        "options2": [
+            "०-१ घण्टा",
+            "१-२ घण्टा",
+            "२-३ घण्टा",
+            "३-४ घण्टा"
+        ]
+    },
+    {
+        "id": "30",
+        "qsn": "Who do you live with? Or, where do you live?",
+        "qsn2": "तपाई कोसँग बस्नुहुन्छ? वा, कहाँ बस्नुहुन्छ?",
+        "options": [
+            "Parents",
+            "Relatives",
+            "Hostel"
+        ],
+        "options2": [
+            "अभिभावक",
+            "आफन्त",
+            "छात्रावास/Hostel"
+        ]
+    },
+    {
+        "id": "31",
+        "qsn": "What is your father’s profession?",
+        "qsn2": "तपाईको बुबाको पेसा के हो?",
+        "options": [
+            "Business",
+            "Job holder/Employee",
+            "Foreign employment",
+            "Other"
+        ],
+        "options2": [
+            "व्यवसाय",
+            "नोकरी धारक",
+            "वैदेशिक रोजगार",
+            "अन्य"
+        ]
+    },
+    {
+        "id": "32",
+        "qsn": "What is your mother’s profession?",
+        "qsn2": "तपाईको आमाको पेशा के हो?",
+        "options": [
+            "Business",
+            "Service / Employee / Job",
+            "Foreign employment",
+            "Other"
+        ],
+        "options2": [
+            "व्यवसाय",
+            "सेवा / कर्मचारी / काम",
+            "वैदेशिक रोजगार",
+            "अन्य"
+        ]
+    },
+    {
+        "id": "33",
+        "qsn": "How many members are there in your family?",
+        "qsn2": "तपाईको परिवारमा कति सदस्य छन्?",
+        "options": [
+            "2",
+            "3-4",
+            "5-7",
+            "More than 7"
+        ],
+        "options2": [
+            "२",
+            "३-४",
+            "५-७",
+            "७ भन्दा बढी"
+        ]
+    },
+    {
+        "id": "34",
+        "qsn": "Do you have any members in your family who are alcoholic except you?",
+        "qsn2": "तपाईको परिवारमा तपाई बाहेक मदिरा सेवन गर्ने सदस्यहरु छन्?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "35",
+        "qsn": "What is the highest educational degree obtain by any of your family member except you?",
+        "qsn2": "तपाईको परिवारको तपाई बाहेक कुनै सदस्यले प्राप्त गरेको उच्चतम शैक्षिक डिग्री के हो?",
+        "options": [
+            "Masters or higher",
+            "Bachelors",
+            "Higher Secondary(11-12)",
+            "Secondary Level or less(1-10)"
+        ],
+        "options2": [
+            "पी.एच.डी वा उच्च",
+            "मास्टर्स",
+            "उच्च माध्यमिक (११-१२)",
+            "माध्यमिक तह वा कम (१-१०)"
+        ]
+    },
+    {
+        "id": "36",
+        "qsn": "What is the duration of free time that you have allocated for watching TV, using electronic gadgets, playing sports etc. after your school-hour?",
+        "qsn2": "तपाईँले विद्यालयको समय पछि टिभी हेर्न, इलेक्ट्रोनिक ग्याजेटहरू प्रयोग गर्न, खेलकुद खेल्न आदिका लागि छुट्याएको खाली समय कति हो?",
+        "options": [
+            "0-1hr",
+            "1-2hr",
+            "2-3hr",
+            "3-4hr"
+        ],
+        "options2": [
+            "०-१ घण्टा",
+            "१-२ घण्टा",
+            "२-३ घण्टा",
+            "३-४ घण्टा"
+        ]
+    },
+    {
+        "id": "37",
+        "qsn": "Where do you currently live?",
+        "qsn2": "तपाईं हाल कहाँ बस्नुहुन्छ?",
+        "options": [
+            "House",
+            "Rent",
+            "Other"
+        ],
+        "options2": [
+            "घर",
+            "भाडा",
+            "अन्य"
+        ]
+    },
+    {
+        "id": "38",
+        "qsn": "Do you own a mobile phone?",
+        "qsn2": "के तपाईसँग मोबाइल फोन छ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "39",
+        "qsn": "Does your family own a four wheeler vehicle? ",
+        "qsn2": "तपाईंको परिवारसँग चार पाङ्ग्रे सवारी साधन छ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "40",
+        "qsn": "Do you own two vehicles? ",
+        "qsn2": "के तपाईसँग दुईवटा गाडी छन्?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    },
+    {
+        "id": "41",
+        "qsn": "What is the number of rooms you are in living? including kitchen, bedroom, livingroom",
+        "qsn2": "तपाईं बस्ने कोठाको संख्या कति छ? भान्छा, शयनकक्ष, बैठक कोठा सहित",
+        "options": [
+            "1-2",
+            "3-5",
+            "6-8",
+            "9-more"
+        ],
+        "options2": [
+            "१-२",
+            "३-५",
+            "६-८",
+            "९-अधिक"
+        ]
+    },
+    {
+        "id": "42",
+        "qsn": "Who do you see yourself in the next 10 years?",
+        "qsn2": "आगामी १० वर्षमा तपाई आफूलाई कसलाई देख्नुहुन्छ?",
+        "options": [
+            "Business owner",
+            "Service / Employee / Job holder",
+            "Other"
+        ],
+        "options2": [
+            "व्यवसाय मालिकहरू",
+            "सेवा / कर्मचारी / काम",
+            "अन्य"
+        ]
+    },
+    {
+        "id": "43",
+        "qsn": "What is your expected monthly income in the next 10 years?",
+        "qsn2": "आगामी १० वर्षमा तपाईको अपेक्षित मासिक आम्दानी कति छ?",
+        "options": [
+            "Below 1 lakh",
+            "1-2 lakh(s)",
+            "2-3 lakhs",
+            "More than 4 lakhs"
+        ],
+        "options2": [
+            "१ लाख भन्दा कम",
+            "१-२ लाख(हरू)",
+            "२-३ लाख",
+            "चार लाख भन्दा बढी"
+        ]
+    },
+    {
+        "id": "44",
+        "qsn": "Do you wish to go abroad in future?",
+        "qsn2": "के तपाई भविष्यमा विदेश जान चाहनुहुन्छ?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "options2": [
+            "हो",
+            "होइन"
+        ]
+    }
+]
