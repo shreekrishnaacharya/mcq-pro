@@ -1,8 +1,6 @@
-import { Controller, HttpCode, Methods } from "@damijs/core";
+import { Controller, HttpCode, Methods, isEmpty } from "@damijs/core";
 import Ans from "../../../models/Ans";
-// import fs from 'fs';
-// import User from "../../../models/User";
-// import User from "../../../models/User";
+import Pans from "../../../models/Pans";
 class FeedsController extends Controller {
     constructor() {
         super(Ans);
@@ -28,9 +26,43 @@ class FeedsController extends Controller {
             }
             next();
         };
+        this.check = async (req, res, next) => {
+            const model = new Pans();
+            const sid = req.params.id;
+            const smodel = model.find(q => {
+                return q.andWhere({ sid });
+            }).one();
+            if (isEmpty(smodel)) {
+                res.sendStatus(HttpCode.NOT_FOUND);
+            }
+            else {
+                res.sendStatus(HttpCode.OK);
+            }
+            next();
+        };
+        this.parent = async (req, res, next) => {
+            const model = new Pans();
+            const dataList = req.body;
+            try {
+                if (model.load(dataList)) {
+                    if (await model.save()) {
+                        res.sendStatus(HttpCode.ACCEPTED);
+                        return next();
+                    }
+                }
+                res.sendStatus(HttpCode.BAD_REQUEST);
+            }
+            catch (err) {
+                console.log(err);
+                res.status(HttpCode.INTERNAL_SERVER_ERROR).send({});
+            }
+            next();
+        };
         this.route = () => {
             return [
                 { method: Methods.POST, path: "/", action: "create" },
+                { method: Methods.GET, path: "/", action: "check" },
+                { method: Methods.PUT, path: "/", action: "parent" },
             ];
         };
     }

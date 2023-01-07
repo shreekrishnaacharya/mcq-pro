@@ -1,9 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import { Controller, Dami, DataProvider, HttpCode, isEmpty, Methods, QueryBuild } from "@damijs/core";
+import { Controller, HttpCode, Methods, isEmpty } from "@damijs/core";
 import Ans from "../../../models/Ans";
-// import fs from 'fs';
-// import User from "../../../models/User";
-// import User from "../../../models/User";
+import Pans from "../../../models/Pans";
 
 class FeedsController extends Controller<Ans> {
     constructor() {
@@ -33,10 +31,44 @@ class FeedsController extends Controller<Ans> {
         next();
     }
 
+    check = async (req: Request, res: Response, next: NextFunction) => {
+        const model = new Pans();
+        const sid = req.params.id;
+        const smodel = model.find(q => {
+            return q.andWhere({ sid })
+        }).one();
+        if (isEmpty(smodel)) {
+            res.sendStatus(HttpCode.NOT_FOUND);
+        } else {
+            res.sendStatus(HttpCode.OK);
+        }
+        next();
+    }
+
+    parent = async (req: Request, res: Response, next: NextFunction) => {
+        const model = new Pans();
+        const dataList = req.body;
+        try {
+            if (model.load(dataList)) {
+                if (await model.save()) {
+                    res.sendStatus(HttpCode.ACCEPTED);
+                    return next();
+                }
+            }
+            res.sendStatus(HttpCode.BAD_REQUEST);
+        } catch (err) {
+            console.log(err)
+            res.status(HttpCode.INTERNAL_SERVER_ERROR).send({});
+        }
+        next();
+    }
+
 
     route = () => {
         return [
             { method: Methods.POST, path: "/", action: "create" },
+            { method: Methods.GET, path: "/:id", action: "check" },
+            { method: Methods.PUT, path: "/", action: "parent" },
         ];
     };
 }
