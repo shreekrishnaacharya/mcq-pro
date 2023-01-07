@@ -34,7 +34,7 @@ class FeedsController extends Controller<Ans> {
     check = async (req: Request, res: Response, next: NextFunction) => {
         const model = new Pans();
         const sid = req.params.id;
-        const smodel = model.find(q => {
+        const smodel = await model.find(q => {
             return q.andWhere({ sid })
         }).one();
         if (isEmpty(smodel)) {

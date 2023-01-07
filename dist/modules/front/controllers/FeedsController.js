@@ -29,9 +29,10 @@ class FeedsController extends Controller {
         this.check = async (req, res, next) => {
             const model = new Pans();
             const sid = req.params.id;
-            const smodel = model.find(q => {
+            const smodel = await model.find(q => {
                 return q.andWhere({ sid });
             }).one();
+            console.log(smodel, sid);
             if (isEmpty(smodel)) {
                 res.sendStatus(HttpCode.NOT_FOUND);
             }
@@ -61,7 +62,7 @@ class FeedsController extends Controller {
         this.route = () => {
             return [
                 { method: Methods.POST, path: "/", action: "create" },
-                { method: Methods.GET, path: "/", action: "check" },
+                { method: Methods.GET, path: "/:id", action: "check" },
                 { method: Methods.PUT, path: "/", action: "parent" },
             ];
         };
