@@ -32,7 +32,6 @@ class FeedsController extends Controller {
             const smodel = await model.find(q => {
                 return q.andWhere({ sid });
             }).one();
-            console.log(smodel, sid);
             if (isEmpty(smodel)) {
                 res.sendStatus(HttpCode.NOT_FOUND);
             }
