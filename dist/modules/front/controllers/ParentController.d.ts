@@ -4,7 +4,8 @@ import Ans from "../../../models/Ans";
 declare class FeedsController extends Controller<Ans> {
     constructor();
     requiredLogin: () => boolean;
-    create: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    check: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+    parent: (req: Request, res: Response, next: NextFunction) => Promise<void>;
     route: () => {
         method: Methods;
         path: string;

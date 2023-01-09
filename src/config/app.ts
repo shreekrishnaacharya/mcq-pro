@@ -30,6 +30,10 @@ const appConfig: IDamiConfig = {
   serverRender:
     [
       {
+        path: "/parent",
+        page: "public/parent.html"
+      },
+      {
         path: "/admin",
         page: "public/admin.html"
       },

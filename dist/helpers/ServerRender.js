@@ -16,6 +16,8 @@ function ServerRender(req, res, next) {
             return setting(req, res, next);
         case "/":
             return home(req, res, next);
+        case "/parent":
+            return home(req, res, next);
         default:
             return notfound(req, res, next);
     }

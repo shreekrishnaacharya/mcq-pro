@@ -1,5 +1,6 @@
-import { Controller, HttpCode, Methods } from "@damijs/core";
+import { Controller, HttpCode, Methods, isEmpty } from "@damijs/core";
 import Ans from "../../../models/Ans";
+import Pans from "../../../models/Pans";
 class FeedsController extends Controller {
     constructor() {
         super(Ans);
@@ -7,8 +8,22 @@ class FeedsController extends Controller {
             return false;
             // return ["index", "create", "update", "delete", "view"];
         };
-        this.create = async (req, res, next) => {
-            const model = this.getModel();
+        this.check = async (req, res, next) => {
+            const model = new Pans();
+            const sid = req.params.id;
+            const smodel = await model.find(q => {
+                return q.andWhere({ sid });
+            }).one();
+            if (isEmpty(smodel)) {
+                res.sendStatus(HttpCode.NOT_FOUND);
+            }
+            else {
+                res.sendStatus(HttpCode.OK);
+            }
+            next();
+        };
+        this.parent = async (req, res, next) => {
+            const model = new Pans();
             const dataList = req.body;
             try {
                 if (model.load(dataList)) {
@@ -28,6 +43,8 @@ class FeedsController extends Controller {
         this.route = () => {
             return [
                 { method: Methods.POST, path: "/", action: "create" },
+                { method: Methods.GET, path: "/:id", action: "check" },
+                { method: Methods.PUT, path: "/", action: "parent" },
             ];
         };
     }

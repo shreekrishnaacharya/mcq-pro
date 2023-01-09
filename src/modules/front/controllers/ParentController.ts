@@ -3,7 +3,7 @@ import { Controller, HttpCode, Methods, isEmpty } from "@damijs/core";
 import Ans from "../../../models/Ans";
 import Pans from "../../../models/Pans";
 
-class FeedsController extends Controller<Ans> {
+class ParentController extends Controller<Ans> {
     constructor() {
         super(Ans);
     }
@@ -12,9 +12,23 @@ class FeedsController extends Controller<Ans> {
         // return ["index", "create", "update", "delete", "view"];
     };
 
+    
+    check = async (req: Request, res: Response, next: NextFunction) => {
+        const model = new Pans();
+        const sid = req.params.id;
+        const smodel = await model.find(q => {
+            return q.andWhere({ sid })
+        }).one();
+        if (isEmpty(smodel)) {
+            res.sendStatus(HttpCode.NOT_FOUND);
+        } else {
+            res.send(await smodel.toJson());
+        }
+        next();
+    }
 
-    create = async (req: Request, res: Response, next: NextFunction) => {
-        const model = this.getModel();
+    parent = async (req: Request, res: Response, next: NextFunction) => {
+        const model = new Pans();
         const dataList = req.body;
         try {
             if (model.load(dataList)) {
@@ -30,11 +44,14 @@ class FeedsController extends Controller<Ans> {
         }
         next();
     }
-  route = () => {
+
+
+    route = () => {
         return [
-            { method: Methods.POST, path: "/", action: "create" },
+            { method: Methods.GET, path: "/:id", action: "check" },
+            { method: Methods.PUT, path: "/", action: "parent" },
         ];
     };
 }
 
-export default FeedsController;
+export default ParentController;

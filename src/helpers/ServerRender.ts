@@ -18,6 +18,8 @@ function ServerRender(req: Request, res: Response, next: NextFunction) {
       return setting(req, res, next)
     case "/":
       return home(req, res, next)
+    case "/parent":
+      return home(req, res, next)
     default:
       return notfound(req, res, next)
   }
