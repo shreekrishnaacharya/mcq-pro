@@ -69,7 +69,7 @@ const appConfig: IDamiConfig = {
     host: "node8452-referendum.ktm.yetiappcloud.com",
     user: "root",
     password: "SbwqYb3ufm",
-    database: "voteup"
+    database: "mcq"
     //************************************/
     // host: "sql.freedb.tech",
     // user: "freedb_root2",
