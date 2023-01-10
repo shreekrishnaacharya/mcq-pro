@@ -7,6 +7,7 @@ declare const ContorllerList: {
             setting: import("../modules/back/controllers/SettingController").default;
             dashboard: import("../modules/back/controllers/DashboardController").default;
         };
+        parent: import("../modules/front/controllers/ParentController").default;
         feeds: import("../modules/front/controllers/FeedsController").default;
     };
 };

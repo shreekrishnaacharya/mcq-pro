@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { Controller, Methods } from "@damijs/core";
 import Ans from "../../../models/Ans";
-declare class FeedsController extends Controller<Ans> {
+declare class ParentController extends Controller<Ans> {
     constructor();
     requiredLogin: () => boolean;
     check: (req: Request, res: Response, next: NextFunction) => Promise<void>;
@@ -12,4 +12,4 @@ declare class FeedsController extends Controller<Ans> {
         action: string;
     }[];
 }
-export default FeedsController;
+export default ParentController;

@@ -1,7 +1,7 @@
 import { Controller, HttpCode, Methods, isEmpty } from "@damijs/core";
 import Ans from "../../../models/Ans";
 import Pans from "../../../models/Pans";
-class FeedsController extends Controller {
+class ParentController extends Controller {
     constructor() {
         super(Ans);
         this.requiredLogin = () => {
@@ -15,10 +15,13 @@ class FeedsController extends Controller {
                 return q.andWhere({ sid });
             }).one();
             if (isEmpty(smodel)) {
-                res.sendStatus(HttpCode.NOT_FOUND);
+                res.send({ status: false });
             }
             else {
-                res.sendStatus(HttpCode.OK);
+                res.send({
+                    status: true,
+                    sid: smodel.getValue("sid")
+                });
             }
             next();
         };
@@ -42,11 +45,10 @@ class FeedsController extends Controller {
         };
         this.route = () => {
             return [
-                { method: Methods.POST, path: "/", action: "create" },
                 { method: Methods.GET, path: "/:id", action: "check" },
                 { method: Methods.PUT, path: "/", action: "parent" },
             ];
         };
     }
 }
-export default FeedsController;
+export default ParentController;

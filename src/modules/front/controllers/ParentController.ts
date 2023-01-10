@@ -12,7 +12,7 @@ class ParentController extends Controller<Ans> {
         // return ["index", "create", "update", "delete", "view"];
     };
 
-    
+
     check = async (req: Request, res: Response, next: NextFunction) => {
         const model = new Pans();
         const sid = req.params.id;
@@ -20,9 +20,12 @@ class ParentController extends Controller<Ans> {
             return q.andWhere({ sid })
         }).one();
         if (isEmpty(smodel)) {
-            res.sendStatus(HttpCode.NOT_FOUND);
+            res.send({ status: false });
         } else {
-            res.send(await smodel.toJson());
+            res.send({
+                status: true,
+                sid: smodel.getValue("sid")
+            });
         }
         next();
     }
@@ -44,7 +47,6 @@ class ParentController extends Controller<Ans> {
         }
         next();
     }
-
 
     route = () => {
         return [
